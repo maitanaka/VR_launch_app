@@ -6,6 +6,11 @@ using System.Collections.Generic;
 
 public class ButtonController : MonoBehaviour {
 
+	//各パネル
+	public GameObject StoryPanel;
+	public GameObject TagsPanel;
+	public GameObject CategoryPanel;
+
 	//Category
 	public RoomData.RoomCategory category;
 	public GameObject newRoom;
