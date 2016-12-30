@@ -30,7 +30,9 @@ public class ButtonController : MonoBehaviour {
 	}
 
 	public void SaveStory(){
-		content = inputField.text;
+		string content = text.text;
+		Debug.Log (content);
+		Debug.Log ("aaaaa");
 		newRoom.GetComponent<RoomController> ().roomData.story = content;
 	}
 
