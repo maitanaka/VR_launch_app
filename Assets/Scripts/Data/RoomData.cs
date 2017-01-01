@@ -28,5 +28,4 @@ public class RoomData {
 		title,
 	    story;
 
-	// public List<string> tags = new List<string>();
 }

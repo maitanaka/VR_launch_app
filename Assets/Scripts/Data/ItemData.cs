@@ -7,17 +7,6 @@ using System;
 [System.SerializableAttribute]
 
 public class ItemData{
-//	public Image ItemImage;
-//	public Text priceField;
-//	public Text itemNameField;
-//	public Text creatorNameField;
-//	public Text commentField;
-//
-//	public Image ItemImageField;
-//	public Text priceField;
-//	public Text itemNameField;
-//	public Text creatorNameField;
-//	public Text commentField;
 
 	public Sprite itemImage;
 	public string price;
@@ -36,5 +25,5 @@ public class ItemData{
 		Scene = 5,
 		WallAndWindows = 5
 	}
-
+			
 }

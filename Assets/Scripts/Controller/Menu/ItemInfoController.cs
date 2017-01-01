@@ -8,4 +8,6 @@ public class ItemInfoController : MonoBehaviour {
 	public Text itemNameField;
 	public Text creatorNameField;
 	public Text commentField;
+
+	public Text likeCountField;
 }

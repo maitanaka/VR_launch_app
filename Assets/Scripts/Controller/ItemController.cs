@@ -8,7 +8,6 @@ public class ItemController : MonoBehaviour {
 
 	public ItemData itemData;
 	public ItemData.ItemCategory itemCategory;
-//	private RoomData roomdata;
 
 	// Use this for initialization
 	void Start () {

@@ -6,19 +6,8 @@ using System.Collections.Generic;
 
 public class ItemButtonController : MonoBehaviour {
 
-//	private ItemData itemData;
 	public GameObject ItemInfoPanel;
 	public GameObject itemPrefab;
-
-	//itemInfo側
-//	public Image ItemImageField;
-//	public Text priceField;
-//	public Text itemNameField;
-//	public Text creatorNameField;
-//	public Text commentField;
-//
-	//itemButton側
-
 
 
 	//showItemDetails
@@ -34,12 +23,9 @@ public class ItemButtonController : MonoBehaviour {
 		itemInfo.creatorNameField.text = item.itemData.creatorName;
 		itemInfo.commentField.text = item.itemData.comment;
 
-		
-//		itemInfo.ItemImageField.GetComponent<Image> ().sprite = itemData.itemImage;
-//		itemInfo.priceField.GetComponent<Text> ().text = price;
-//		itemInfo.itemNameField.GetComponent<Text> ().text = itemName.text;
-//		itemInfo.creatorNameField.GetComponent<Text> ().text = creatorName;
-//		itemInfo.commentField.GetComponent<Text> ().text = comment;
-//		ItemInfo.GetComponent<IteTextmData> ().ItemImage.GetComponent<Image> ().material.mainTexture = itemImage;
+		String likecCount = item.itemData.LikeCount.ToString();
+		itemInfo.likeCountField.text = likecCount;
+
 	}
+
 }
