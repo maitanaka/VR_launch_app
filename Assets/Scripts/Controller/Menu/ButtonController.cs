@@ -20,8 +20,28 @@ public class ButtonController : MonoBehaviour {
 	public Text text;
 	private String content;
 
+
+	//showItemDetails
+	public GameObject itemObj;
+	public int price;
+	public string itemName;
+	public string creatorName;
+	public string comment;
+//	public Transform SetChild(GameObject parent,GameObject child, string name = null)
+//	{
+//		GameObject obj = Instantiate (child);
+//
+//		obj.transform.SetParent (parent.transform);
+//
+//		obj.transform.localPosition = new Vector3 (0f, 0f, 0f);
+//		obj.transform.localScale = new Vector3 (1f, 1f, 1f);
+//
+//		obj.name = (name != null) ? name : child.name;
+//
+//		return obj.transform;
+//	}
+
 	public void ChooseCategory(int category) {
-		Debug.Log (category);
 		newRoom.GetComponent<RoomController> ().roomData.roomCategory = (RoomData.RoomCategory)category;
 	}
 
@@ -35,5 +55,7 @@ public class ButtonController : MonoBehaviour {
 		Debug.Log ("aaaaa");
 		newRoom.GetComponent<RoomController> ().roomData.story = content;
 	}
+
+
 
 }
