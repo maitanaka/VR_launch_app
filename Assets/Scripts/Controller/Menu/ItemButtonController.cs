@@ -9,6 +9,17 @@ public class ItemButtonController : MonoBehaviour {
 	public GameObject ItemInfoPanel;
 	public GameObject itemPrefab;
 
+	public Image itemImage;
+	public Text itemName;
+
+
+	void Start() 
+	{
+		ItemController item =  itemPrefab.GetComponent<ItemController> ();
+		itemImage.sprite = item.itemData.itemImage;
+		itemName.text = item.itemData.itemName;
+	}
+
 
 	//showItemDetails
 	public void ShowItemDetails() 
