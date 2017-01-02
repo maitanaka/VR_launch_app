@@ -9,21 +9,25 @@ using System;
 public class ItemData{
 
 	public Sprite itemImage;
-	public string price;
+	public string itemImagePath;
+	public string prefabName;
+	public int price;
 	public string itemName;
 	public string creatorName;
 	public string comment;
-	public int LikeCount;
+	public int likeCount;
 
+	public Const.ItemCategory itemCategory;
 
-	public enum ItemCategory
+	public void SetData(string[] data)
 	{
-		Furniture = 1,
-		Good = 2,
-		Light = 3,
-		Building = 4,
-		Scene = 5,
-		WallAndWindows = 5
+		itemName = data [0];
+		prefabName = data [1];
+		price = int.Parse(data [2]);
+		comment = data [3];
+		creatorName = data [4];
+		itemImagePath = data [5];
+		likeCount = int.Parse(data [6]);
+		itemCategory = (Const.ItemCategory)int.Parse(data [7]);
 	}
-			
 }
