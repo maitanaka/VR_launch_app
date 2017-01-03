@@ -3,10 +3,9 @@ using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 
-public class GameManager : MonoBehaviour {
+public class GameManager : SingletonMonoBehaviour<GameManager> {
 	public TextAsset itemDataCsv;
-	public List<ItemData> itemList;
-
+	public List<ItemData> itemDataList;
 	// Use this for initialization
 	void Start () 
 	{
@@ -17,14 +16,16 @@ public class GameManager : MonoBehaviour {
 	{
 		var csv = CSVReader.SplitCsvGrid (itemDataCsv.ToString());
 		print (csv.GetLength (1));
-		itemList = new List<ItemData> ();
+		itemDataList = new List<ItemData> ();
 		for(int i = 1; i < csv.GetLength(1); i++)
 		{
 			ItemData item = new ItemData ();
 			item.SetData (GetRaw(csv, i));
-			itemList.Add (item);
+			itemDataList.Add (item);
 		}
 	}
+
+
 
 	public string[] GetRaw (string[,] csvData, int rowNum) 
 	{
