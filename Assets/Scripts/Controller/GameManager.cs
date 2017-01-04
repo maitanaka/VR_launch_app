@@ -25,8 +25,6 @@ public class GameManager : SingletonMonoBehaviour<GameManager> {
 		}
 	}
 
-
-
 	public string[] GetRaw (string[,] csvData, int rowNum) 
 	{
 		string[] data = new string[ csvData.GetLength(0) ];

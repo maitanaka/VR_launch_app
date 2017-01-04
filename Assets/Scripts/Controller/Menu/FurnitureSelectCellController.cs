@@ -21,6 +21,7 @@ public class FurnitureSelectCellController : MonoBehaviour {
 	{
 		itemData = data;
 		itemName.text = data.itemName;
+		itemImage.sprite = Resources.Load<Sprite>("Images/Items/" + data.itemCategory.ToString () + "/" + data.itemName);
 	}
 
 	public void PushCell()

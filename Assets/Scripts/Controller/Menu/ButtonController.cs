@@ -27,19 +27,6 @@ public class ButtonController : MonoBehaviour {
 	public string itemName;
 	public string creatorName;
 	public string comment;
-//	public Transform SetChild(GameObject parent,GameObject child, string name = null)
-//	{
-//		GameObject obj = Instantiate (child);
-//
-//		obj.transform.SetParent (parent.transform);
-//
-//		obj.transform.localPosition = new Vector3 (0f, 0f, 0f);
-//		obj.transform.localScale = new Vector3 (1f, 1f, 1f);
-//
-//		obj.name = (name != null) ? name : child.name;
-//
-//		return obj.transform;
-//	}
 
 	public void ChooseCategory(int category) {
 		newRoom.GetComponent<RoomController> ().roomData.roomCategory = (RoomData.RoomCategory)category;

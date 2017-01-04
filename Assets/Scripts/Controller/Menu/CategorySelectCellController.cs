@@ -15,5 +15,4 @@ public class CategorySelectCellController : MonoBehaviour {
 		categorySelectButton = GetComponent<Button> ();
 		categorySelectButton.onClick.AddListener (PushButton);
 	}
-
 }
