@@ -7,7 +7,7 @@ public class FurnituresListPopUpController : SingletonMonoBehaviour<FurnituresLi
 	public ItemDescriptionPanelController itemDescriptionPanel;
 	public GameObject furnitureSelectCellPrefab;
 	public Transform cellScrollPanelOrigin;
-	public ItemController itemController;
+	public SelectItemController itemController;
 
 	private List<FurnitureSelectCellController> furnitureSelectCells = new List<FurnitureSelectCellController>();
 

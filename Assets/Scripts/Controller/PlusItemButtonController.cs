@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public class PlusItemButtonController : MonoBehaviour {	
 	public ItemDescriptionPanelController itemDescriptionPanel;
 	public ItemData itemData;
-	public ItemController item;
+	public SelectItemController item;
 
 	void Start () {
 		Button plusButton = GetComponent<Button> ();

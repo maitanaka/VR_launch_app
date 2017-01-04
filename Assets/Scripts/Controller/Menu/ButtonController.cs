@@ -12,7 +12,7 @@ public class ButtonController : MonoBehaviour {
 	public GameObject CategoryPanel;
 
 	//Category
-	public RoomData.RoomCategory category;
+	public Const.RoomCategory category;
 	public GameObject newRoom;
 
 	//Story
@@ -29,7 +29,7 @@ public class ButtonController : MonoBehaviour {
 	public string comment;
 
 	public void ChooseCategory(int category) {
-		newRoom.GetComponent<RoomController> ().roomData.roomCategory = (RoomData.RoomCategory)category;
+		newRoom.GetComponent<RoomController> ().roomData.roomCategory = (Const.RoomCategory)category;
 	}
 
 	public void SetTags(string tag) {

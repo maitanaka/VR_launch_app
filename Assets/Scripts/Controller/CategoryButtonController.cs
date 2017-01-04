@@ -6,11 +6,11 @@ using System.Collections;
 
 public class CategoryButtonController : MonoBehaviour {
 
-	public RoomData.RoomCategory category;
+	public Const.RoomCategory category;
 	public GameObject newRoom;
 
 	public void ChooseCategory(int category) {
 		Debug.Log (category);
-		newRoom.GetComponent<RoomController> ().roomData.roomCategory = (RoomData.RoomCategory)category;
+		newRoom.GetComponent<RoomController> ().roomData.roomCategory = (Const.RoomCategory)category;
 	}
 }
