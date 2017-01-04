@@ -7,7 +7,6 @@ public class FurnituresListPopUpController : SingletonMonoBehaviour<FurnituresLi
 	public ItemDescriptionPanelController itemDescriptionPanel;
 	public GameObject furnitureSelectCellPrefab;
 	public Transform cellScrollPanelOrigin;
-	public SelectItemController itemController;
 
 	private List<FurnitureSelectCellController> furnitureSelectCells = new List<FurnitureSelectCellController>();
 
@@ -37,19 +36,6 @@ public class FurnituresListPopUpController : SingletonMonoBehaviour<FurnituresLi
 			var cell = obj.GetComponent<FurnitureSelectCellController> ();
 			cell.SetValue (item);
 			furnitureSelectCells.Add (cell);
-		}
-	}
-
-	//plusボタンを押した時のitemDescriptionPanelのitemNameと一致したitemのデータを取得
-	public void SetItemPrefab(string prefabName)
-	{
-		var itemPrefab = (
-			from d in GameManager.instance.itemDataList
-			where d.itemName == prefabName
-			select d).ToList();
-
-		foreach (var item in itemPrefab) {
-			itemController.SetValue (item);
 		}
 	}
 }

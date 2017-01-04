@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using LitJson;
 
 [System.SerializableAttribute]
 
@@ -14,5 +15,5 @@ public class RoomData {
 	public string title;
 	public string story;
 	public List<Transform> itemPosition = new List<Transform> ();
-
+	public List<int> itemIds = new List<int>();
 }

@@ -9,12 +9,14 @@ public class ItemDescriptionPanelController : MonoBehaviour {
 	public Text creatorNameField;
 	public Text commentField;
 	public Text likeCountField;
+	public string itemCategory;
 
 	private ItemData itemData;
 
 	public void SetDescription(ItemData data)
 	{
 		itemData = data;
+		itemCategory = data.itemCategory + "";
 		priceField.text = data.price + "円(税込み)";
 		itemNameField.text = data.itemName;
 		creatorNameField.text = data.creatorName;
