@@ -20,7 +20,7 @@ public class ItemDescriptionPanelController : MonoBehaviour {
 		creatorNameField.text = data.creatorName;
 		likeCountField.text = data.likeCount + "";
 		commentField.text = data.comment;
-
-//		ItemImageField = data.ima
+		ItemImageField.sprite = Resources.Load<Sprite>("Images/Items/" + data.itemCategory.ToString () + "/" + data.itemName);
 	}
+
 }

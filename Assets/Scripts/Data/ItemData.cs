@@ -10,19 +10,19 @@ public class ItemData{
 
 	public Sprite itemImage;
 	public string itemImagePath;
-	public string prefabName;
 	public int price;
 	public string itemName;
 	public string creatorName;
 	public string comment;
 	public int likeCount;
+	public int id;
 
 	public Const.ItemCategory itemCategory;
 
 	public void SetData(string[] data)
 	{
 		itemName = data [0];
-		prefabName = data [1];
+		id = int.Parse(data [1]);
 		price = int.Parse(data [2]);
 		comment = data [3];
 		creatorName = data [4];
