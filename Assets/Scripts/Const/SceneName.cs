@@ -1,13 +1,10 @@
-﻿
-public static partial class Const{
+﻿public static partial class Const{
 
 	public enum SceneName {
-		Find,
-		Favorite,
-		Create,
-		Random,
-		MyRoom,
-		FirstTimeUser
+    Create,
+    FindAndFavorites,
+    MyRoom,
+    Top
 	}
 
 }
